@@ -127,8 +127,8 @@ function parseUnread() {
                     self.emit('error', err);
                 });
 
-                if (this.markDeleted) {
-                    self.imap.setFlags(result, 'Deleted', function(err) { console.log(err); });
+                if (self.markDeleted) {
+                    self.imap.setFlags(result, 'Deleted', function(err) {  });
                 }
 
             }, function (err) {
